@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../asset/images/logo1.png";
+import logo from "../../asset/images/pngegg.png";
 import ThemeBtn from "../../utils/themeBtn/ThemeBtn";
 
 const Navbar = ({ datas }) => {
@@ -33,7 +33,7 @@ const Navbar = ({ datas }) => {
         {/*App Logo Area */}
         <Link to="/">
           <div className="flex items-center  ">
-            <img className=" w-16 h-16 -me-2 my-0 " src={logo} alt="logo" />
+            <img className=" w-10 h-10 my-3 " src={logo} alt="logo" />
             <h1 className="text-2xl font-bold text-amber-500">Cooky</h1>
           </div>
         </Link>
