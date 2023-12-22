@@ -9,6 +9,10 @@
       padding: 0;
       box-sizing: border-box;
   }
+
+  body.dark{
+     background-color:#0f172a;
+  }
   .hero{
     background:url('https://i.pinimg.com/564x/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg');
     background-position: center;

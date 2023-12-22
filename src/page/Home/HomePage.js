@@ -15,7 +15,7 @@ const HomePage = () => {
   
   return (
     <div className="pb-16">
-      <Hero />
+      <Hero datas={ categories} />
       <div className="mx-8 mt-8">
         {data !== null ? (
           <SearchMeals datas={data} />

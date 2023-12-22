@@ -24,7 +24,7 @@ const PopularIngre = () => {
 
   return (
     <section className="px-2 mb-8 md:px-20 lg:px-28 mt-24">
-      <h1 className="text-3xl font-bold">Popular Ingredients</h1>
+      <h1 className="text-3xl font-bold dark:text-white">Popular Ingredients</h1>
 
       {pmeals.length === 0 ? (
         <Loader />
@@ -39,7 +39,7 @@ const PopularIngre = () => {
                     alt="ingredient"
                     className="w-40 md:w-52"
                   />
-                  <h5 className="text-lg font-bold pb-4">{p.strIngredient}</h5>
+                  <h5 className="text-lg font-bold pb-4 dark:text-white">{p.strIngredient}</h5>
                 </li>
               </Link>
             ))}

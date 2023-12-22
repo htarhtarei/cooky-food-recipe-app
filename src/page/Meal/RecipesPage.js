@@ -66,13 +66,13 @@ const RecipesPage = () => {
         </Link>
 
         <div className="mt-8">
-          <h1 className="text-3xl font-bold uppercase tracking-widest">
+          <h1 className="text-3xl dark:text-white font-bold uppercase tracking-widest">
             Meal Details
           </h1>
           {data.length === 0 ? (
             <Loader />
           ) : (
-            <div className="md:p-12 py-4 px-8 bg-white mt-8">
+            <div className="md:p-12 py-4 px-8 dark:bg-slate-800 dark:text-white bg-white mt-8 overflow-x-hidden">
               <MealImgAndIngredient singleMeal={singleMeal} />
               <MealMeasure singleMeal={singleMeal} />
               <MealInstruction singleMeal={singleMeal} />

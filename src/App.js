@@ -13,6 +13,7 @@ import Footer from './component/Footer/Footer';
 import RecipesPage from './page/Meal/RecipesPage';
 import CategoryMealPage from './page/Categories/CategoryMealPage';
 import IngredientPage from './page/Ingredients/IngredientPage';
+import ScrollUpButton from './utils/ScrollUpToDownBtnWithTailwindAndReact/ScrollUpButton';
 
 
 function App() {
@@ -29,11 +30,19 @@ function App() {
         <div className=" min-h-[500px]">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="category/:categoryName" element={<CategoryMealPage />} />
+            <Route
+              path="category/:categoryName"
+              element={<CategoryMealPage />}
+            />
             <Route path="food/recipe/:id" element={<RecipesPage />} />
-            <Route path='ingredient/:ingredientName' element={<IngredientPage/>}/>
+            <Route
+              path="ingredient/:ingredientName"
+              element={<IngredientPage />}
+            />
           </Routes>
+          <ScrollUpButton />
         </div>
+
         <Footer />
       </>
     );

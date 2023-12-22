@@ -20,13 +20,15 @@ const MealImgAndIngredient = ({ singleMeal }) => {
               Category -{" "}
               <span className=" font-light">{singleMeal.category}</span>
             </li>
-            <li className=" pb-2 flex items-center">
+            <li className=" pb-2 flex items-center max-w-full">
               Source -
               <Link
-                className="font-light max-w-full text-gray-600"
+                className="font-light dark:text-white max-w-full text-gray-600"
                 to={singleMeal.source}
               >
-                {singleMeal.source}
+                {singleMeal.source
+                  ? singleMeal.source.slice(0, 30) + "....."
+                  : ""}
               </Link>
             </li>
             <li className="pb-2">
@@ -57,4 +59,3 @@ const MealImgAndIngredient = ({ singleMeal }) => {
 };
 
 export default MealImgAndIngredient;
- 
